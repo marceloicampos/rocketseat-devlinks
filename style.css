@@ -46,7 +46,9 @@ body {
 
 #container {
     /* nota: por padrão não definimos o height, pois geralmente a altura segue o conteúdo da página  */
-    width: 360px;
+    /* width: 360px; */
+    width: 100%;
+    max-width: 588px;
     margin: 16px auto 0px;
     padding: 0 24px;
 }
