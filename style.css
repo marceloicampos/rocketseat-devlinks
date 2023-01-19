@@ -42,13 +42,14 @@ body {
     background-size: cover;
     /* cover == faça toda cobertura do background size */
     /* background: url('./assets/bg-mobile.jpg') no-repeat top center / cover; */
+    height: 100vh;
 }
 
 #container {
     /* nota: por padrão não definimos o height, pois geralmente a altura segue o conteúdo da página  */
     /* width: 360px; */
     width: 100%;
-    max-width: 588px;
+    max-width: 480px;
     margin: 16px auto 0px;
     padding: 0 24px;
 }
@@ -181,4 +182,15 @@ footer {
     font-size: 14px;
     text-align: center;
     padding-bottom: 24px;
+}
+
+/* media queries - at rules */
+
+@media (min-width: 720px) {
+    :root {
+        --bg-url: url('./assets/bg-desktop.jpg');
+    }
+    .light {
+        --bg-url: url('./assets/bg-desktop-light.jpg');
+    }
 }
